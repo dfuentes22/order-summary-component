@@ -7,11 +7,25 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="css/style.css">
 
   <title>Frontend Mentor | Order summary card</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background: url("images/pattern-background-desktop.svg") no-repeat;
+      background-size: cover;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 100%;
+    }
+
     .attribution {
       font-size: 11px;
       text-align: center;
@@ -20,28 +34,50 @@
     .attribution a {
       color: hsl(228, 45%, 44%);
     }
+
+    /* Card */
+    .card {
+      width: 100%;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .card img.card-hero-image {
+      width: 100%;
+    }
   </style>
 </head>
 
 <body>
+  <main>
+    <div class="card">
+      <img src="images/illustration-hero.svg" alt="card-hero-image" class="card-hero-image">
+      <h3 class="card-title">Order Summary</h3>
+      <div class="card-body">
+        You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!
 
-  Order Summary
+        <div class="member-plan">
+          <img src="images/icon-music.svg" alt="icon-music">
+          Annual Plan
+          $59.99/year
+          Change
+        </div>
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any
-  device anywhere you like!
+        Proceed to Payment
+        Cancel Order
+      </div>
+    </div>
+  </main>
 
-  Annual Plan
-  $59.99/year
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/dfuentes22">Daniel Fuentes</a>.
+    </div>
+  </footer>
 
-  Change
 
-  Proceed to Payment
-  Cancel Order
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 
 </html>
